@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: #fafafa;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.Controllers.Bin_FXMLController">
+    <stylesheets>
+        <URL value="@fxml.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="107.0" prefHeight="611.0" prefWidth="800.0" style="-fx-background-color: #fa8072;">
+         <children>
+            <Button fx:id="deleteAndLeaveButton" layoutX="465.0" layoutY="532.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="260.0" style="-fx-background-color: #fafafa; -fx-border-color: #fafafa;" text="Удалить все" textAlignment="CENTER" AnchorPane.leftAnchor="465.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="532.0">
+               <font>
+                  <Font name="System Italic" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="payButton" layoutX="465.0" layoutY="476.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="260.0" style="-fx-background-color: #fafafa; -fx-border-color: #fafafa;" text="Оплатить" textAlignment="CENTER" AnchorPane.leftAnchor="465.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="476.0">
+               <font>
+                  <Font name="System Italic" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="backToCatalogButton" layoutX="465.0" layoutY="422.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="260.0" style="-fx-background-color: #fafafa; -fx-border-color: #fafafa;" text="Назад к каталогу" textAlignment="CENTER" AnchorPane.leftAnchor="465.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="422.0">
+               <font>
+                  <Font name="System Italic" size="19.0" />
+               </font>
+            </Button>
+            <ScrollPane blendMode="RED" layoutX="417.0" layoutY="50.0" prefHeight="352.0" prefWidth="356.0" style="-fx-border-color: #fafafa; -fx-background-color: #fa8072;">
+               <content>
+                  <Text fx:id="howMuchMoneyButton" boundsType="LOGICAL_VERTICAL_CENTER" strokeType="OUTSIDE" strokeWidth="0.0" text="Вы выбрали услуг на " textAlignment="CENTER" wrappingWidth="346.95672607421875">
+                     <font>
+                        <Font name="Gabriola" size="28.0" />
+                     </font>
+                  </Text>
+               </content>
+            </ScrollPane>
+            <ImageView fitHeight="631.0" fitWidth="412.0" layoutX="-14.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/pinkLady.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label contentDisplay="CENTER" layoutX="107.0" layoutY="57.0" prefHeight="42.0" prefWidth="432.0" text="Магазин женской обуви" textAlignment="CENTER">
+         <font>
+            <Font name="Gabriola" size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="100.0" fitWidth="102.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/woman.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="goBackButton" layoutX="724.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="60.0" style="-fx-background-color: #fafafa; -fx-border-color: #fa8072;" text="Назад" textAlignment="CENTER" AnchorPane.rightAnchor="16.0">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Text fx:id="userLoginText" layoutX="607.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Логин: " textAlignment="RIGHT" wrappingWidth="176.53668212890625" AnchorPane.rightAnchor="16.46331787109375">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      
+   </children>
+</AnchorPane>

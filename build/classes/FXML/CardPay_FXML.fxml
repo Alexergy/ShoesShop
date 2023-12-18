@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: #fa8072;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.Controllers.CardPay_FXMLController">
+    <stylesheets>
+        <URL value="@fxml.css" />
+    </stylesheets>
+   <children>
+      <Button fx:id="payButton" layoutX="71.0" layoutY="596.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="288.0" style="-fx-background-color: #fafafa;" text="Оплатить" textAlignment="CENTER" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="441.0" AnchorPane.topAnchor="596.0">
+         <font>
+            <Font name="System Italic" size="23.0" />
+         </font>
+      </Button>
+      <Pane layoutX="102.0" layoutY="240.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="322.0" prefWidth="594.0" AnchorPane.topAnchor="240.0">
+         <children>
+            <Text fx:id="cardInfoText" layoutX="29.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Данные о карте" wrappingWidth="358.13671875">
+               <font>
+                  <Font name="System Italic" size="21.0" />
+               </font>
+            </Text>
+            <TextField fx:id="cardNumber_field" layoutX="29.0" layoutY="67.0" prefHeight="40.0" prefWidth="432.0" promptText="Номер карты (999999)">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="cardCode_field" layoutX="29.0" layoutY="121.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="160.0" promptText="Пароль (9999)">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </PasswordField>
+            <Text fx:id="notCorrectText" layoutX="29.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="530.9367065429688">
+               <font>
+                  <Font name="System Italic" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Label contentDisplay="CENTER" layoutX="270.0" layoutY="150.0" prefHeight="83.0" prefWidth="258.0" text="Оплата" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Italic" size="74.0" />
+         </font>
+      </Label>
+      <AnchorPane id="AnchorPane" prefHeight="119.0" prefWidth="800.0" style="-fx-background-color: #fafafa;" styleClass="mainFxmlClass">
+         <stylesheets>
+            <URL value="@fxml.css" />
+         </stylesheets>
+         <children>
+            <Label contentDisplay="CENTER" layoutX="103.0" layoutY="60.0" prefHeight="42.0" prefWidth="432.0" text="Магазин женской обуви" textAlignment="CENTER">
+               <font>
+                  <Font name="Gabriola" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="106.0" fitWidth="103.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/woman.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="goBackButton" layoutX="726.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="60.0" style="-fx-background-color: #fafafa; -fx-border-color: #fa8072;" text="Назад" textAlignment="CENTER">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Button>
+            <Text fx:id="userLoginText" layoutX="609.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Логин: " textAlignment="RIGHT" wrappingWidth="176.53668212890625" AnchorPane.rightAnchor="14.46331787109375">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button fx:id="backToBinButton" layoutX="439.0" layoutY="596.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="288.0" style="-fx-background-color: #fafafa;" text="Вернуться к корзине" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="23.0" />
+         </font>
+      </Button>
+      
+   </children>
+</AnchorPane>
